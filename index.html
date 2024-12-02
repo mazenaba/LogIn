@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- font awesome -->
+  <link rel="stylesheet" href="styles/all.min.css" />
+  <!-- styles -->
+  <link rel="stylesheet" href="styles/bootstrap.min.css" />
+  <link rel="stylesheet" href="styles/styles.css" />
+  <title>Login Form</title>
+</head>
+
+<body>
+  <header class="100vh position-relative r">
+    <div class="bg-layer position-absolute start-0 end-0 top-0 bottom-0">
+      <h1 class="text-center text-white pt-5">Login System</h1>
+
+      <div
+        class="wrapper d-flex justify-content-center align-items-center   mx-auto mt-5 rounded-2 position-relative col-lg-4 col-sm-6 ">
+
+
+        <!-- register -->
+        <div class="form-box register text-center w-75 py-5">
+          <h2 class="fw-bold fs-1 pb-4">Registeration</h2>
+          <form class="form-control bg-transparent w-100 border-0">
+            <div class="input-box position-relative d-flex align-items-center border-bottom mb-3">
+              <span class="icon position-absolute top-50 end-0 translate-middle-y">
+
+                <i class="fa-solid fa-user fs-5"></i>
+              </span>
+              <input id="userName" type="text" class="w-100 form-control pe-4 bg-transparent border-0 text-white"
+                placeholder="Enter your Name" required />
+            </div>
+            <div class="input-box position-relative d-flex align-items-center border-bottom">
+              <span class="icon position-absolute top-50 end-0 translate-middle-y">
+
+                <i class="fa-solid fa-envelope fs-5 "></i>
+              </span>
+              <input id="userEmail" type="email" class="w-100 form-control pe-4 bg-transparent border-0 text-white"
+                placeholder="Enter your Email" required />
+            </div>
+
+            <div class="input-box my-3 position-relative border-bottom">
+              <span class="icon position-absolute top-50 end-0 translate-middle-y">
+                <i class="fa-solid fa-lock fs-5 "></i>
+              </span>
+
+              <input id="userPass" type="password" class="w-100 form-control pe-4 bg-transparent border-0 text-white"
+                placeholder="Enter your password" required />
+            </div>
+            <p id="exist" class="text-danger text-center"></p>
+
+
+            <button id="regBtn" type="button" class="btn btn-dark mt-4 w-100 fw-bold" onclick="userData()">Sign
+              Up</button>
+            <div class="register  mt-5">
+              <span class="text-white">Already have Account <a href="login.html" class="  text-black ms-1 login-link">
+                  login</a></span>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <script src="js/all.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

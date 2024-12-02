@@ -1,0 +1,36 @@
+
+header{
+    background-image: url(../images/altocumulus-clouds.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+.bg-layer{
+    background-color: rgba(0,0 , 0, 0.1);
+}
+
+.w-30{
+    width: 30%;
+}
+.wrapper{
+    background: transparent;
+    border: 2px solid rgba(255,255 , 255, 0.5);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0,0 , 0, 0.5);
+    
+}
+input{
+   margin: 5px 0px;
+}
+ 
+input::placeholder { color: white !important;}
+
+.register a{
+    text-decoration: none;
+}
+.register a:hover{
+    text-decoration: underline;
+}
+
